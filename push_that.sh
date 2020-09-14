@@ -13,5 +13,5 @@ fi
 
 cd ${REPO}
 ${GIT} add .
-${GIT} commit -m "Automated commit on ${COMMIT_TIMESTAMP}"
+${GIT} commit -m "Automated commit on '${COMMIT_TIMESTAMP}'"
 ${GIT} push
