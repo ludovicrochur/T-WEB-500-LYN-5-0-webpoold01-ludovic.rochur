@@ -1,6 +1,7 @@
 #!/bin/bash
 
 REPO='/home/ludovic/delivery/T-WEB-500-LYN-5-0-webpoold01-ludovic.rochur'
+COMMIT_TIMESTAMP=`date +'%Y-%m-%d %H:%M:%S %Z'`
 GIT=`which git`
 
 if [ ! -d ${REPO}/.git ]; then
@@ -12,5 +13,5 @@ fi
 
 cd ${REPO}
 ${GIT} add .
-${GIT} commit -m "Auto commit"
+${GIT} commit -m "Auto commit on ${COMMIT_TIMESTAMP}"
 ${GIT} push
