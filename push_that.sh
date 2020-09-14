@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPO='/home/ludovic/delivery/T-WEB-500-LYN-5-0-webpoold01-ludovic.rochur'
-COMMIT_TIMESTAMP=`'%d-%m-%Y %H:%M:%S'`
+COMMIT_TIMESTAMP=`'%d %m %Y %H:%M:%S'`
 GIT=`which git`
 
 if [ ! -d ${REPO}/.git ]; then
